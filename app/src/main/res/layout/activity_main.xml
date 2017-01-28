@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal">
+    <TableRow>
+<TextView android:id="@+id/labelAcceleration"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Acceleration:"
+    android:layout_weight="1"/>
+<TextView android:id="@+id/textAcceleration"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:id="@+id/labelCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coordinates:"
+            android:layout_weight="1"/>
+        <TextView android:id="@+id/textCoordinates"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="2"/>
+    </TableRow>
+<fragment
+    class="com.here.android.mpa.mapping.MapFragment"
+    android:id="@+id/mapfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</TableLayout>
