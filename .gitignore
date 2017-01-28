@@ -7,3 +7,6 @@
 /build
 /captures
 .externalNativeBuild
+HERE-sdk.jar
+credentials.txt
+.idea/*
